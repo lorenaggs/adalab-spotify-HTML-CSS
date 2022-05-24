@@ -1,5 +1,6 @@
 * {
   margin: 0%;
+  text-decoration: none;
 }
 
 .menu {
@@ -48,7 +49,7 @@ h2 {
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .title2 {
@@ -64,7 +65,7 @@ h3 {
 }
 
 .title-politicas {
-  font-size: 11px;
+  font-size: 14px;
   padding-bottom: 10px;
 }
 
@@ -87,11 +88,11 @@ h3 {
 
 .description-icons {
   display: flex;
-  /* flex-direction: row; */
+  align-items: center;
 }
 
-.description-p{
-  font-size: 12px;
+.description-p {
+  font-size: 16px;
 }
 
 .pie {
@@ -101,7 +102,7 @@ h3 {
   padding: 20px;
   position: relative;
   bottom: 0;
-  /* width: 100%; */
+
 }
 
 .legal,
@@ -117,7 +118,6 @@ h3 {
 .pais {
   display: flex;
   justify-content: flex-end;
-  /* margin-top: 20px; */
   margin-bottom: 10px;
 }
 
@@ -130,11 +130,10 @@ h3 {
   display: flex;
 }
 
-/* .info-usuarios{
-  width: 200px;
-} */
+.refer-2022{
+  color: gray;
+}
 
-/* Pantalla 480px - 1000px */
 
 @media all and (min-width: 480px) {
   .pagina1 {
@@ -153,33 +152,34 @@ h3 {
 
   .conteiner {
     display: flex;
+    align-content: center;
     flex-wrap: wrap;
+    height: 400px;
   }
 
   .description-item {
-    /* border: 2px solid saddlebrown; */
+
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     justify-items: center;
     margin: 5px 5px 10px 5px;
-    text-align: center;
+
+    flex-direction: column;
   }
 
-  .description-icons{
+  .description-icons {
     width: 44%;
-    justify-content: center;
     justify-items: center;
     margin: 5px 5px 10px 5px;
-    text-align: center;
   }
 
   .menu {
     color: black;
     display: flex;
     align-items: center;
-    /* text-align: justify; */
-    }
+
+  }
 
   .menu-premiun,
   .menu-registrate {
@@ -202,11 +202,7 @@ h3 {
     transform: translate(130px, -22px);
     width: 300px;
   }
-
-
 }
-
-/* encima de 1000px */
 
 @media all and (min-width: 1000px) {
   .pagina1 {
@@ -226,18 +222,18 @@ h3 {
   .conteiner {
     display: flex;
     flex-wrap: nowrap;
+    align-items: center;
+    text-align: center;
   }
 
   .description-icons {
     display: flex;
-    justify-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-
+   
+    flex-direction: column;
   }
 
   .info-usuarios {
     transform: translate(130px, -22px);
-    /* margin-right: 0px; */
   }
+
 }
